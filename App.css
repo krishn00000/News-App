@@ -1,0 +1,204 @@
+/* General Body Styling */
+body {
+  background-color: #f4f4f9;
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar-light {
+  background-color: #f8f9fa;
+}
+
+.navbar-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  color: #0066cc;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Tab Navigation */
+.nav-tabs {
+  border-bottom: 2px solid #0066cc;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+  color: #0066cc;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #e0f0ff;
+  color: #0056a8;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #0066cc;
+  color: #fff;
+  border-color: #0066cc;
+}
+
+/* Row Styling for Cards */
+.cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+  gap: 60px; /* Increased space between cards */
+  margin-top: 20px;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+/* Buttons */
+.btn {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #0066cc;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #004f9f;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Form Styling */
+.form-container {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 25px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 8px rgba(0, 102, 204, 0.25);
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .cards-row {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards in a row for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .cards-row {
+    grid-template-columns: 1fr; /* 1 card in a row for small screens */
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  .nav-tabs .nav-link {
+    padding: 8px 15px;
+  }
+}
