@@ -1,0 +1,35 @@
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Higher value ensures it's above other content */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  color: #555 !important;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff !important;
+}
+
+.form-control {
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
